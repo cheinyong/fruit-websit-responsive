@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Poppins:wght@400;500;600&display=swap");
+@import "../node_modules/animate.css/animate.min.css";
+$primary:hsl(140, 40%, 48%);
+$body-bg:hsl(0, 0%, 100%);
+$border-radius:2rem;
+$btn-padding-y:1.2rem;
+$btn-padding-x:1.2rem;
+$input-padding-y:1rem;
+$spacer: 1rem;
+$container-color: hsl(0, 0%, 95%);
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 4,
+  7: $spacer * 5,
+  8: $spacer * 6,
+  9: $spacer * 7
+);
+$table-th-font-weight:bold;
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+  
+.title-font{
+    font-family: "Cherry Bomb One", cursive;
+    color: hsl(140, 4%, 12%);
+}
+
+.text-font{
+    
+    font-family: "Poppins", sans-serif;
+    color: hsl(140, 4%, 40%);
+    font-size: large;
+}
+
+// nav::before{
+//     background-image: url("branch-1.png");
+// }
+
+.card-bg{
+    background-color: hsl(141, 16%, 79%);;
+}
+
+.card:hover{
+    .card-img-top{
+        transform: scale(1.5);
+    }
+}
+
+// .dish-card:hover img{
+//     transform: translateY(-60px);
+// }
+
+#Home{
+    position: relative;
+}
+#Home::after{
+    content:url("../img/branch-2.png");
+    
+    width:130px;
+    opacity:1;
+    position:absolute;
+    bottom: 0px;
+    right: 50px;
+ }
+
+
+.join{
+    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) , url("../img/join-bg.png");
+    opacity:1;
+    border-radius: 30px;
+    
+}
+.p-f-img{
+    img{
+        margin-top: -80px;
+
+    }
+}
